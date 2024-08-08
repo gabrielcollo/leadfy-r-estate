@@ -1,6 +1,6 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 // import Image from "apps/website/components/Image.tsx";
-// import Icon from "../components/ui/Icon.tsx";
+import Icon from "../components/ui/Icon.tsx";
 import Slider from "../components/ui/Slider.tsx";
 import { useId } from "../sdk/useId.ts";
 
@@ -40,7 +40,8 @@ function CreateAreaCard(props) {
   )
 }
 
-function Dots( areas, interval = 0 ) {
+function Dots({ areas, interval = 0} ) {
+
   return (
     <>
       <style
@@ -55,7 +56,7 @@ function Dots( areas, interval = 0 ) {
         }}
       />
       <ul class="carousel col-span-full gap-3 z-10">
-        {areas?.map((_, index) => (
+        {areas.map((_, index) => (
           <li class="carousel-item">
             <Slider.Dot index={index}>
               <div class="py-5">
