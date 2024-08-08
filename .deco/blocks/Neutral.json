@@ -29,18 +29,12 @@
     "__resolveType": "website/loaders/fonts/googleFonts.ts",
     "fonts": [
       {
-        "variations": [
-          {
-            "weight": "100"
-          },
-          {
-            "weight": "400"
-          },
-          {
-            "weight": "300"
-          }
-        ],
-        "family": "Open Sans"
+        "variations": [],
+        "family": "Inter"
+      },
+      {
+        "variations": [],
+        "family": "open sans"
       }
     ]
   },
