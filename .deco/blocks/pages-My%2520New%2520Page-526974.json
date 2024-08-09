@@ -1,0 +1,21 @@
+{
+  "name": "My New Page",
+  "path": "/example-path3",
+  "sections": [
+    {
+      "__resolveType": "site/sections/HeaderReal.tsx",
+      "imagem": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/22859c4d-fe46-4620-a5bf-311bffe41951",
+      "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/0f9b9c11-0329-4f74-949b-71a374b549dd"
+    },
+    {
+      "__resolveType": "site/sections/HeroBanner.tsx",
+      "title": "Find Your Dream Home",
+      "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat.",
+      "background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/16f6f791-0a51-4d9f-b59f-d0b8a919a896"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

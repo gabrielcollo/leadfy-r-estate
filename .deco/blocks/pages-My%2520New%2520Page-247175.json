@@ -1,0 +1,14 @@
+{
+  "name": "My New Page",
+  "path": "/example-path2",
+  "sections": [
+    {
+      "__resolveType": "site/sections/HeaderReal.tsx",
+      "imagem": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/6d4af01d-7bc3-4812-9685-fb1599680ffb"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

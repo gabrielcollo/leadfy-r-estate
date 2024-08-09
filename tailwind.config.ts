@@ -1,7 +1,7 @@
-import daisyui from "daisyui";
+// import daisyui from "daisyui";
 
 export default {
-  plugins: [daisyui],
+  plugins: [],
   daisyui: { themes: [], logs: false },
   content: ["./**/*.tsx"],
   theme: {

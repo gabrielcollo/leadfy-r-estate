@@ -3,5 +3,11 @@
   "editor.quickSuggestions": {
     "strings": true
   },
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript",
+    "css": "css"
+},
   "editor.defaultFormatter": "denoland.vscode-deno"
+  
 }

@@ -1,1 +1,7 @@
-{"__resolveType":"site/sections/Hero.tsx"}
+{
+  "__resolveType": "site/sections/Hero.tsx",
+  "title": "<p><span style=\"font-size: 52pt\">Find Your Dream Home</span></p>",
+  "placement": "left",
+  "cta": [],
+  "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat."
+}
