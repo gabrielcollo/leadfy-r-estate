@@ -40,7 +40,7 @@ function CreateAreaCard(props) {
   )
 }
 
-function Dots({ areas, interval = 0} ) {
+function Dots({ areas, interval = 0 }) {
 
   return (
     <>
@@ -115,40 +115,50 @@ function ProperticesByArea(props: Props) {
       <h3 class="text-sm text-gray-400 text-center mb-5">
         {props.subtitle}
       </h3>
-      <div class="w-full flex justify-center">
-        {
-          areas.map((area) => {
-            return (
-              <div class="w-[300px]">
-                <span>{area.location}</span>
-                <img src={area.image} alt="" />
-              </div>
-            )
-          })
-        }
-      </div>
-      
-      {/* Mobile Cards - Slider */}
-      <Slider
-        class="carousel carousel-center w-full col-span-full row-span-full gap-6"
-        rootId={id}
-        infinite
-      >
-        {
-          areas?.map((area, index) => (
-            <Slider.Item
-              index={index}
-              class="carousel-item max-w-[600px] w-full"
+
+      {
+        window.innerWidth >= 1024 && (
+
+          <div class="w-full flex justify-center">
+            {
+              areas.map((area) => {
+                return (
+                  <div class="w-[300px]">
+                    <span>{area.location}</span>
+                    <img src={area.image} alt="" />
+                  </div>
+                )
+              })
+            }
+          </div>
+        )
+      }
+      {
+        window.innerWidth < 1024 && (
+          <>
+            <Slider
+              class="carousel carousel-center w-full col-span-full row-span-full gap-6"
+              rootId={id}
+              infinite
             >
-              <CreateAreaCard area={area} />
-            </Slider.Item>
-          ))
-        }
-      </Slider>
-      <div class="flex justify-between pt-8 lg:px-16">
-        <Dots areas={areas} />{" "}
-        <Buttons />
-      </div>
+              {
+                areas?.map((area, index) => (
+                  <Slider.Item
+                    index={index}
+                    class="carousel-item max-w-[600px] w-full"
+                  >
+                    <CreateAreaCard area={area} />
+                  </Slider.Item>
+                ))
+              }
+            </Slider>
+            <div class="flex justify-between pt-8 lg:px-16">
+              <Dots areas={areas} />{" "}
+              <Buttons />
+            </div>
+          </>
+        )
+      }
     </div>
   );
 }

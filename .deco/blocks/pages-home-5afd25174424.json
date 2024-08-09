@@ -1,49 +1,7 @@
 {
   "name": "Home",
   "path": "/",
-  "sections": [
-    {
-      "__resolveType": "site/sections/ProperticesByArea.tsx",
-      "title": "Propertice by Area",
-      "subtitle": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices ",
-      "areaPropertices": [
-        {
-          "location": "Washington",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/0bcc5588-484d-4ea3-91f6-d80e753f2131"
-        },
-        {
-          "location": "Franklin",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/690652f0-2fc7-4014-927f-a5de6432bdd7"
-        }
-      ],
-      "properticeAreas": [
-        {
-          "location": "Washington",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/129ae5fe-0adb-4f81-a65e-23ef4525c247"
-        },
-        {
-          "location": "Franklin",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/54dfae42-d7c3-4a7a-b9b2-0ddcfa1aafa9"
-        },
-        {
-          "location": "Clinton",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/0212af53-b01b-4f2e-bce3-8e0513b16635"
-        },
-        {
-          "location": "Arlington",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/902e06fc-d16d-4e3f-ba7b-8f2189833b39"
-        },
-        {
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/b3ba56cb-b8ac-4626-a14a-0259ee389327",
-          "location": "Centerville"
-        },
-        {
-          "location": "Miami",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/a7eceb9b-e691-40f1-8812-71bf15bb2130"
-        }
-      ]
-    }
-  ],
+  "sections": [],
   "__resolveType": "website/pages/Page.tsx",
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
