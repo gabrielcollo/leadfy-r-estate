@@ -1,33 +1,29 @@
 const AdvenceSearch = () => {
     return (
         <div className="bg-white shadow-lg rounded-lg p-6 w-11/12 max-w-4xl mx-auto relative -top-20 z-20">
-            <div className="flex justify-center mb-4">
-                <button className="px-4 py-2 rounded-l-lg bg-blue-500 text-white">Rent</button>
-                <button className="px-4 py-2 rounded-r-lg bg-gray-200">Sale</button>
-            </div>
             <div className="flex justify-between items-center space-x-4">
                 <div>
-                    <label className="block mb-1">Locations</label>
-                    <select className="border rounded px-3 py-2">
+                    <label className="block mb-1 font-semibold text-base text-[#2C3A61] pl-1">Locations</label>
+                    <select className="py-2 pl-0 pr-3 text-gray-400">
                         <option>Select your city</option>
                         {/* Options would go here */}
                     </select>
                 </div>
                 <div>
-                    <label className="block mb-1">Property Type</label>
-                    <select className="border rounded px-3 py-2">
+                    <label className="block mb-1 font-semibold text-base text-[#2C3A61] pl-1">Property Type</label>
+                    <select className="py-2 pl-0 pr-3 text-gray-400">
                         <option>Select property type</option>
                         {/* Options would go here */}
                     </select>
                 </div>
                 <div>
-                    <label className="block mb-1">Rent Range</label>
-                    <select className="border rounded px-3 py-2">
-                        <option>Select rent range</option>
+                    <label className="block mb-1 font-semibold text-base text-[#2C3A61] pl-1">Rent Range</label>
+                    <select className="py-2 pl-0 pr-3 text-gray-400">
+                        <option className="text-gray-400">Select rent range</option>
                         {/* Options would go here */}
                     </select>
                 </div>
-                <button className="bg-blue-500 text-white px-4 py-2 rounded">Search</button>
+                <button className="bg-[#4A60A1] text-white py-3 px-6 rounded min-h-12 min-w-24 text-base">Search</button>
             </div>
         </div>
     );
