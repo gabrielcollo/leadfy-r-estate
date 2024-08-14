@@ -1,7 +1,35 @@
 {
   "name": "Home",
   "path": "/",
-  "sections": [],
+  "sections": [
+    {
+      "__resolveType": "site/sections/ProperticesByArea.tsx",
+      "title": "Lorem",
+      "subtitle": "Lorem Ipsum",
+      "properticeAreas": [
+        {
+          "location": "Washington",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/5412019f-ea56-41f0-b319-befb3d3e2684"
+        },
+        {
+          "location": "Franklin",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/ef4490d3-4623-4a93-b178-4ad6bbc43ad3"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/032fce67-b466-4ad6-8c44-7f89d7bc8f28",
+          "location": "Clinton"
+        },
+        {
+          "location": "Arlington",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/ff6c6fd8-0088-42d9-a33d-53a0645ae323"
+        },
+        {
+          "location": "Centerville",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/389a371b-1af9-43f2-a749-bacf5e2a080c"
+        }
+      ]
+    }
+  ],
   "__resolveType": "website/pages/Page.tsx",
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"

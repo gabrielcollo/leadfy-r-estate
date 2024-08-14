@@ -116,7 +116,7 @@ function ProperticesByArea(props: Props) {
         {props.subtitle}
       </h3>
 
-      {
+      {/* {
         window.innerWidth >= 1024 && (
 
           <div class="w-full flex justify-center">
@@ -134,7 +134,7 @@ function ProperticesByArea(props: Props) {
         )
       }
       {
-        window.innerWidth < 1024 && (
+        window.innerWidth < 1024 && ( */}
           <>
             <Slider
               class="carousel carousel-center w-full col-span-full row-span-full gap-6"
@@ -157,8 +157,8 @@ function ProperticesByArea(props: Props) {
               <Buttons />
             </div>
           </>
-        )
-      }
+        {/* )
+      } */}
     </div>
   );
 }
