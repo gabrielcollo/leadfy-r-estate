@@ -1,17 +1,28 @@
 import Image from "apps/website/components/Image.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Icon from "../components/ui/Icon.tsx";
+import MenuMobile from "site/islands/MenuMobile.tsx";
+import type { Props as MenuMobileProps } from "site/islands/MenuMobile.tsx";
+
+export type MenuNavItem = {
+    label: string;
+    href?: string;
+    background?: string;
+    color?: string;
+    listlinks?: Link[];
+}
 
 export interface PropsHeaderReal {
     imagem?: ImageWidget;
     logo?: ImageWidget;
+    menuItems?: MenuNavItem[];
 }
 
-const HeaderReal = ({ imagem, logo }: PropsHeaderReal) => {
+const HeaderReal = ({ imagem, logo, menuItems }: PropsHeaderReal) => {
     return (
         <div className="flex flex-col w-full absolute top-0 z-10">
-            <div className="bg-transparent container py-7">
-                <div className="flex items-center justify-between mx-auto px-4">
+            <div className="bg-transparent container py-7 hidden lg:flex">
+                <div className="flex items-center justify-between mx-auto px-4 w-full">
                     <div className="flex items-center">
                         <Image
                             src={imagem || ""}
@@ -45,15 +56,19 @@ const HeaderReal = ({ imagem, logo }: PropsHeaderReal) => {
                             height={44}
                         />
                     </div>
-                    <nav className="flex items-center gap-2">
-                        <a href="#" className="text-white hover:text-gray-300 transition duration-300 font-semibold text-sm px-3 py-6">HOME</a>
-                        <a href="#" className="text-white hover:text-gray-300 transition duration-300 font-semibold text-sm px-3 py-6">ABOUT US</a>
-                        <a href="#" className="text-white hover:text-gray-300 transition duration-300 font-semibold text-sm px-3 py-6">OUR AGENTS</a>
-                        <a href="#" className="text-white hover:text-gray-300 transition duration-300 font-semibold text-sm px-3 py-6">PROPERTIES</a>
-                        <a href="#" className="text-white hover:text-gray-300 transition duration-300 font-semibold text-sm px-3 py-6">GALLERY</a>
-                        <a href="#" className="text-white hover:text-gray-300 transition duration-300 font-semibold text-sm px-3 py-6">BLOG</a>
-                        <a href="#" className="text-white hover:text-gray-300 transition duration-300 font-semibold text-sm px-3 py-6">CONTACT US</a>
-                        <a href="#" className="text-white hover:text-gray-300 transition duration-300 font-semibold text-sm px-3 py-6">SEARCH</a>
+                    <div className="block lg:hidden items-center gap-2">
+                        <MenuMobile items={menuItems} />
+                    </div>
+                    <nav className="hidden lg:flex items-center gap-2">
+                        {menuItems?.map((item: MenuNavItem) => (
+                            <a
+                                key={item.label}
+                                href={item.href}
+                                className="text-white hover:text-gray-300 transition duration-300 font-semibold text-sm px-3 py-6"
+                            >
+                                {item.label}
+                            </a>
+                        ))}
                         <a href="#" className="text-white border border-white px-3 py-1 rounded transition duration-300 hover:bg-white hover:text-black font-semibold text-sm">Add Listing</a>
                     </nav>
                 </div>
