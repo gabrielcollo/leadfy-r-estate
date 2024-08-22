@@ -48,6 +48,33 @@
       "title": "Find Your Dream Home",
       "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat.",
       "background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/16f6f791-0a51-4d9f-b59f-d0b8a919a896"
+    },
+    {
+      "__resolveType": "site/sections/FeaturedProperty.tsx",
+      "title": "Propertice by Area",
+      "subDescription": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat.",
+      "properties": [
+        {
+          "city": "Sorocaba",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/9f684318-c7ee-469a-9548-0dea484d25e4"
+        },
+        {
+          "city": "Sorocaba",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/7ff7e989-36af-4731-8d72-48bfee4e072b"
+        },
+        {
+          "city": "Sorocaba",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/a72e4536-e842-4b79-8782-185216cd69a6"
+        },
+        {
+          "city": "Sorocaba",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/c0833a4e-e34a-40ce-aed0-f4a44616330b"
+        },
+        {
+          "city": "Sorocaba",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/74f83d91-488c-4d3a-8411-577939d07ff3"
+        }
+      ]
     }
   ],
   "seo": {
