@@ -5,6 +5,7 @@ export interface FeaturedPropertyCardProps {
   city?: string;
   image?: ImageWidget;
   location?: string;
+  viewDetail?: string;
 }
 
 export interface FeaturedPropertyProps {

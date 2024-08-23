@@ -75,6 +75,33 @@
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/74f83d91-488c-4d3a-8411-577939d07ff3"
         }
       ]
+    },
+    {
+      "__resolveType": "site/sections/PropertyBuyOption.tsx",
+      "title": "Propertice by Area",
+      "subDescription": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat.",
+      "PropertyBuyOptions": [
+        {
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/af6ee1c4-a7ad-4aed-949f-c29d63cfec11",
+          "title": "Sell your home",
+          "subDescription": "We do a free evaluation to be sure you want to start selling."
+        },
+        {
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/af6ee1c4-a7ad-4aed-949f-c29d63cfec11",
+          "title": "Sell your home",
+          "subDescription": "We do a free evaluation to be sure you want to start selling."
+        },
+        {
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/af6ee1c4-a7ad-4aed-949f-c29d63cfec11",
+          "title": "Sell your home",
+          "subDescription": "We do a free evaluation to be sure you want to start selling."
+        },
+        {
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/af6ee1c4-a7ad-4aed-949f-c29d63cfec11",
+          "title": "Sell your home",
+          "subDescription": "We do a free evaluation to be sure you want to start selling."
+        }
+      ]
     }
   ],
   "seo": {
