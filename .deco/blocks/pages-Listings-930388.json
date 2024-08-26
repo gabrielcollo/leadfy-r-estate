@@ -1,0 +1,26 @@
+{
+  "name": "Listings",
+  "path": "/listings",
+  "sections": [
+    {
+      "__resolveType": "site/sections/BannerCategory.tsx",
+      "image": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/2bcb2f39-2a31-4c6f-a425-5ea1659f735f",
+        "alt": "Privia"
+      },
+      "imageMobile": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/231a6fa8-b564-4003-b7da-9398c3c2fc7e",
+        "alt": "Privia Mobile"
+      },
+      "content": {
+        "title": "LOREM IPSUM",
+        "url": "/listings?",
+        "description": "LOREM IPSUM DOLOR SIT AMET CONSECTUR"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

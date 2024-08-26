@@ -104,5 +104,11 @@
   "/.deco/blocks/Vanilla.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Theme/Theme.tsx"
+  },
+  "/.deco/blocks/pages-Listings-930388.json": {
+    "name": "Listings",
+    "path": "/listings",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
