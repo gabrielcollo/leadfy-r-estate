@@ -1,0 +1,18 @@
+{
+  "name": "My New Page",
+  "path": "/example-path2",
+  "sections": [
+    {
+      "__resolveType": "site/sections/HeaderReal.tsx",
+      "imagem": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/f145977f-206a-4071-9e70-b0ffe9db1285",
+      "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/f2055aff-b453-4e2d-86a3-67a90d12fa24"
+    },
+    {
+      "__resolveType": "hero"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

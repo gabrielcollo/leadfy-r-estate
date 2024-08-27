@@ -3,8 +3,12 @@
   "editor.quickSuggestions": {
     "strings": true
   },
-  "editor.defaultFormatter": "denoland.vscode-deno",
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript",
+    "css": "css"
+  },
+  "editor.defaultFormatter": "denoland.vscode-deno"
+  
 }
