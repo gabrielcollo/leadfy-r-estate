@@ -1,0 +1,40 @@
+{
+  "name": "Listings",
+  "path": "/listings",
+  "sections": [
+    {
+      "__resolveType": "site/sections/BannerCategory.tsx",
+      "image": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/2bcb2f39-2a31-4c6f-a425-5ea1659f735f",
+        "alt": "Privia"
+      },
+      "imageMobile": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/231a6fa8-b564-4003-b7da-9398c3c2fc7e",
+        "alt": "Privia Mobile"
+      },
+      "content": {
+        "title": "LOREM IPSUM",
+        "url": "/listings?",
+        "description": "LOREM IPSUM DOLOR SIT AMET CONSECTUR"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Shelf.tsx",
+      "property": {
+        "image": {
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/a83f5830-d17d-4cc4-94e0-4c11c2a8af7b",
+          "alt": "lorem"
+        },
+        "address": "lorem ipsum dolor, sit amet",
+        "price": "$ 590,693",
+        "cars": "3",
+        "bathrooms": "2",
+        "area": "2,909.00 ft"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
