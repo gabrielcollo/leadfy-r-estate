@@ -17,6 +17,20 @@
         "url": "/listings?",
         "description": "LOREM IPSUM DOLOR SIT AMET CONSECTUR"
       }
+    },
+    {
+      "__resolveType": "site/sections/Shelf.tsx",
+      "property": {
+        "image": {
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/a83f5830-d17d-4cc4-94e0-4c11c2a8af7b",
+          "alt": "lorem"
+        },
+        "address": "lorem ipsum dolor, sit amet",
+        "price": "$ 590,693",
+        "cars": "3",
+        "bathrooms": "2",
+        "area": "2,909.00 ft"
+      }
     }
   ],
   "seo": {
