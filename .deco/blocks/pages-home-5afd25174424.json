@@ -1,7 +1,68 @@
 {
   "name": "Home",
   "path": "/",
-  "sections": [],
+  "sections": [
+    {
+      "__resolveType": "site/sections/Footer.tsx",
+      "subscribe": {
+        "instructions": "<pre><code>Call : +123 400 123\n\nPraesent nulla massa, hendrerit \nvestibulum gravida in, feugiat auctor felis.</code></pre><p></p><p></p>",
+        "title": "Contact Us",
+        "description": "Email: example@mail.com"
+      },
+      "links": [
+        {
+          "items": [
+            {
+              "label": "Home",
+              "href": "#"
+            },
+            {
+              "label": "Become a Host",
+              "href": "#"
+            },
+            {
+              "label": "Pricing",
+              "href": "#"
+            },
+            {
+              "label": "Blog",
+              "href": "#"
+            },
+            {
+              "label": "Contact",
+              "href": "#"
+            }
+          ],
+          "title": "Features"
+        }
+      ],
+      "logo": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/6d90909b-7f23-4a3a-822e-a095301d2c6f"
+      },
+      "social": [
+        {
+          "network": "Facebook",
+          "href": "/"
+        },
+        {
+          "network": "Rede",
+          "href": "/"
+        },
+        {
+          "network": "Linkedin",
+          "href": "/"
+        },
+        {
+          "network": "Instagram",
+          "href": "/"
+        },
+        {
+          "network": "BE",
+          "href": "/"
+        }
+      ]
+    }
+  ],
   "__resolveType": "website/pages/Page.tsx",
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
