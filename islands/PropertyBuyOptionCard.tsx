@@ -13,7 +13,7 @@ const PropertyBuyOptionCard = ({ title, subDescription, icon }: PropertyBuyOptio
     return (
         <div
             onClick={() => setIsSelected(!isSelected)}
-            className={`p-6 rounded-lg w-[312px] h-[298px] cursor-pointer transition-colors ${isSelected ? 'bg-white' : 'bg-[#EDEFF6]'
+            className={`p-6 rounded-lg w-[312px] h-[298px] cursor-pointer transition-colors ${isSelected ? 'bg-white' : 'bg-privia-pure'
                 }`}
         >
             <div className="flex justify-start mb-4">
@@ -26,7 +26,7 @@ const PropertyBuyOptionCard = ({ title, subDescription, icon }: PropertyBuyOptio
 
             <h3 className="text-2xl font-semibold mb-6 text-start">{title}</h3>
             <p className="text-base text-start text-gray-400 mb-6">{subDescription}</p>
-            <a href="#" className="text-[#4A60A1] text-base text-start font-normal block">Read more</a>
+            <a href="#" className="text-privia-passion text-base text-start font-normal block">Read more</a>
         </div>
     );
 }

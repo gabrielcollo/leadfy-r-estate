@@ -21,7 +21,7 @@ export interface PropsHeaderReal {
 const HeaderReal = ({ imagem, logo, menuItems }: PropsHeaderReal) => {
     return (
         <div className="flex flex-col w-full absolute top-0 z-10">
-            <div className="bg-transparent container py-7 hidden lg:flex">
+            <div className="bg-privia-passion py-2 hidden lg:px-5 lg:flex">
                 <div className="flex items-center justify-between mx-auto px-4 w-full">
                     <div className="flex items-center">
                         <Image
@@ -46,7 +46,7 @@ const HeaderReal = ({ imagem, logo, menuItems }: PropsHeaderReal) => {
                 </div>
             </div>
             <div className="bg-transparent border-b-[1px] border-[#DBDFEC] w-full"></div>
-            <div className="bg-transparent container">
+            <div className="bg-transparent px-5">
                 <div className="flex items-center justify-between mx-auto px-4 py-4">
                     <div className="flex items-center">
                         <Image

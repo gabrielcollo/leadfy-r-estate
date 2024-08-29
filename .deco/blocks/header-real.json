@@ -1,0 +1,12 @@
+{
+  "__resolveType": "site/sections/HeaderReal.tsx",
+  "menuItems": [
+    {
+      "listlinks": [],
+      "label": "listings",
+      "href": "/listings"
+    }
+  ],
+  "imagem": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/9c373c5b-2c8f-4e2a-bc73-7e1c3537adfd",
+  "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/c6bac7ee-a17e-43a3-8bf3-8cd0b72b2b57"
+}
