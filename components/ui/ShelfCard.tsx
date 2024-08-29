@@ -34,15 +34,15 @@ export default function ShelfCard({ property }: Props) {
         <div class="w-full flex gap-4">
           <div class="flex gap-1">
             <Icon id="Car" size={27} strokeWidth={0.1} />
-            <span>{property.cars}</span>
+            <span class="text-[#6D737A]">{property.cars}</span>
           </div>
           <div class="flex gap-1">
             <Icon id="Bathtub" size={27} strokeWidth={0.1} />
-            <span>{property.bathrooms}</span>
+            <span class="text-[#6D737A]">{property.bathrooms}</span>
           </div>
           <div class="flex gap-1">
             <Icon id="ArrowsOut" size={27} strokeWidth={0.1} />
-            <span>{property.area}</span>
+            <span class="text-[#6D737A]">{property.area}</span>
           </div>          
         </div>
       </div>
