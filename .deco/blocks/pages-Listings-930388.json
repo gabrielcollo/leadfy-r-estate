@@ -33,6 +33,10 @@
         "cars": "3",
         "bathrooms": "2",
         "area": "2,909.00 ft"
+      },
+      "propertiesList": {
+        "__resolveType": "site/loaders/propertiesData.ts",
+        "numberOfProperties": 1
       }
     }
   ],
