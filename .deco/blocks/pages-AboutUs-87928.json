@@ -1,0 +1,52 @@
+{
+  "name": "AboutUs",
+  "path": "/AboutUs",
+  "sections": [
+    {
+      "__resolveType": "header-real"
+    },
+    {
+      "__resolveType": "site/sections/BannerAboutUs.tsx",
+      "banner": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/2bcb2f39-2a31-4c6f-a425-5ea1659f735f",
+      "title": "About Us",
+      "ctaLabel": "Join Us",
+      "ctaUrl": "#",
+      "mobileBanner": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/2bcb2f39-2a31-4c6f-a425-5ea1659f735f"
+    },
+    {
+      "__resolveType": "site/sections/AboutUsBody.tsx",
+      "storyTitle": "Our Story",
+      "storyContent": "<p>The world didn’t need another real estate brokerage. It needed something different. Something more. It needed something with the imagination and insight to upend a broken model. A structure that empowers instead of extinguishes the unique potential in each of us. A collection of like minds that understand the potential of technology and building lasting connections. A Brokerage 3.0 that makes no apologies for making the old guard uncomfortable.<br><br><span class=\"NormalTextRun SCXW114139476 BCX0\">As a company born in the chaos of a global&nbsp;</span><span class=\"NormalTextRun SCXW114139476 BCX0\">pandemic, where others saw stumbling blocks, we saw&nbsp;</span><span class=\"NormalTextRun SCXW114139476 BCX0\">stepping stones</span><span class=\"NormalTextRun SCXW114139476 BCX0\">. Built on the success of being the #1 ranked sales team in New York City, SERHANT. is the first Brokerage 3.0 of its kind.</span><br><br>Empowering our agents, clients, partners, and staff with novel media, technology, and educational tools:<br><br>SERHANT. Studios:&nbsp;<span class=\"NormalTextRun SCXW40179093 BCX0\">Award-winning f</span><span class=\"NormalTextRun SCXW40179093 BCX0\">ilm-quality content and media production.</span><br><br>SERHANT. ID Lab:&nbsp;<span class=\"NormalTextRun SCXW40179093 BCX0\">World class&nbsp;</span><span class=\"NormalTextRun SCXW40179093 BCX0\">branding and marketing services.</span><br><br>We know that potential is in everything and everyone. But to spot what’s hidden in plain sight, latent, or undiscovered—in a person, property, or even an entire industry—we need to look at the world differently. And seizing that potential takes something more. At SERHANT., we rely on creativity, camaraderie, grit, and optimism. We have a healthy disregard for the status quo, and, above all, we are relentless in the pursuit of what’s possible.<br></p>",
+      "values": [
+        {
+          "title": "Our Values",
+          "content": "<p><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">﻿We support each other at our low points and never let our high points go to our heads. If one of us is behind, we are all behind. And when one of us succeeds, we ALL do.</span></span><br data-mce-bogus=\"1\"></p>",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/af6ee1c4-a7ad-4aed-949f-c29d63cfec11"
+        },
+        {
+          "title": "Our Values",
+          "content": "<p><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">﻿We support each other at our low points and never let our high points go to our heads. If one of us is behind, we are all behind. And when one of us succeeds, we ALL do.</span></span><br data-mce-bogus=\"1\"></p>",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/af6ee1c4-a7ad-4aed-949f-c29d63cfec11"
+        },
+        {
+          "title": "Our Values",
+          "content": "<p><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">﻿We support each other at our low points and never let our high points go to our heads. If one of us is behind, we are all behind. And when one of us succeeds, we ALL do.</span></span><br data-mce-bogus=\"1\"></p>",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/af6ee1c4-a7ad-4aed-949f-c29d63cfec11"
+        },
+        {
+          "title": "Our Values",
+          "content": "<p><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">﻿We support each other at our low points and never let our high points go to our heads. If one of us is behind, we are all behind. And when one of us succeeds, we ALL do.</span></span><br data-mce-bogus=\"1\"></p>",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/af6ee1c4-a7ad-4aed-949f-c29d63cfec11"
+        }
+      ],
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/95ed5e2b-f055-4d50-bd0a-0ed6aaf205af",
+      "ceoTitle": "Our Founder & CEO",
+      "ceoContent": "<p><span style=\"color: rgb(156, 163, 175); font-size: 12pt;\" data-mce-style=\"color: rgb(156, 163, 175); font-size: 12pt;\">Ryan Matthew Serhant is one of the most successful and well-known real estate brokers in the world with over $10B in lifetime sales. After spending a decade leading one of New York City’s top-ranked — and most disruptive — real estate teams to over $4B in sales, he founded SERHANT., a brokerage driving success through innovative content, technology, and amplification. In addition to his work in real estate, Ryan is an entrepreneur, producer, public speaker, bestselling author, and star of multiple BRAVO TV shows as well as the top-rated Netflix series Owning Manhattan, focused on SERHANT. and released in June of 2024.</span></p>",
+      "ourValuesTitle": "Our Values"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

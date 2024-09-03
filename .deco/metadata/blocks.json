@@ -114,5 +114,17 @@
   "/.deco/blocks/header-real.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/HeaderReal.tsx"
+  },
+  "/.deco/blocks/pages-AboutUs-87928.json": {
+    "name": "AboutUs",
+    "path": "/AboutUs",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-pdp-371179.json": {
+    "name": "pdp",
+    "path": "/example-path5",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
