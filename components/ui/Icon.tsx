@@ -45,7 +45,8 @@ export type AvailableIcons =
   | "Zoom"
   | "Car"
   | "Bathtub"
-  | "ArrowsOut";
+  | "ArrowsOut"
+  | "BedIcon";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**
