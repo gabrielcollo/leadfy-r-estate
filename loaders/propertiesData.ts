@@ -1,7 +1,6 @@
 import type { RequestURLParam } from "apps/website/functions/requestToParam.ts";
 import { xml2js } from "https://deno.land/x/xml2js@1.0.0/mod.ts";
-// import { Parser } from "xml2js";
-
+import { formatPrice } from "../sdk/format.ts";
 
 export type PropertiesList = string[];
 
@@ -17,45 +16,36 @@ export default async function propertiesData(
     // const { slug, idloja } = props;
 
     const response = await fetch(
-        `https://darkgreen-sparrow-978409.hostingersite.com/wp-load.php?security_key=71970be4e06301b8&export_id=1&action=get_data`,
+        `https://darkgreen-sparrow-978409.hostingersite.com/wp-load.php?security_key=71970be4e06301b8&export_id=3&action=get_data`,
     );
-
     const text = await response.text();
-
     const obj = xml2js(text, {
         compact: true,
-    });
-
+    });    
+    const posts = obj.data.post
+    console.log(posts[0]);
     
-    // const parser = new Parser();
-    // const json = await parser.parseStringPromise(text);
-    const json = JSON.stringify(obj, null, 4)
-    console.log(json);
+    const propertiesResult: string[] = posts.map(post => {
+        return (
+            {
+                areaSize: post?.area_size?._text,
+                bathrooms: post?.bathrooms?._text,
+                description: post?.Content?._cdata,
+                features: post?.Feature?._text,
+                id: post?.ID?._text,
+                image: post?.ImageURL?._text,
+                imageFeatured: post?.ImageFeatured?._text,
+                location: post?.Location?._text,
+                postModifiedDate: post?.PostModifiedDate?._text, 
+                price: formatPrice(Number(post?.price?._text))                ,
+                rooms: post?.rooms?._text,
+                slug: post?.Slug?._text,
+                title: post?.Title?._text,
+                type: post?.Type?._text,                
+                url: `/properties/${post?.Slug?._text}`,
+            }
+        )
+    })
 
-    // const vehicles = json.rss.channel[0].item;
-
-    // const pdpResult = {
-    //     idLoja: idloja,
-    //     storeDataFromApi: {
-    //         title: json.rss.channel[0].title[0],
-    //         description: json.rss.channel[0].description[0],
-    //         logo: json.rss.channel[0].logo[0],
-    //     },
-    //     result: vehicles.filter((car: Vehicle) => {
-    //         const titleCar = car["g:title"][0].toLowerCase().replaceAll(
-    //             "-",
-    //             " ",
-    //         );
-    //         const idCar = car["g:id"][0];
-    //         const slugCleaned = decodeURIComponent(
-    //             slug.replaceAll("-", " ").replaceAll("|", "/").toLowerCase(),
-    //         );
-
-    //         return slugCleaned.includes("oferta") &&
-    //             slugCleaned.replaceAll("|", "/").includes(titleCar) &&
-    //             slugCleaned.includes(idCar);
-    //     }),
-    // };
-
-    return "" || [];
+    return propertiesResult || [];
 }

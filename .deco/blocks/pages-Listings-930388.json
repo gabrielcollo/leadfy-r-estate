@@ -1,6 +1,6 @@
 {
-  "name": "Listings",
-  "path": "/listings",
+  "name": "Properties",
+  "path": "/properties",
   "sections": [
     {
       "__resolveType": "header-real"
@@ -23,20 +23,19 @@
     },
     {
       "__resolveType": "site/sections/Shelf.tsx",
-      "property": {
-        "image": {
-          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/a83f5830-d17d-4cc4-94e0-4c11c2a8af7b",
-          "alt": "lorem"
-        },
-        "address": "lorem ipsum dolor, sit amet",
-        "price": "$ 590,693",
-        "cars": "3",
-        "bathrooms": "2",
-        "area": "2,909.00 ft"
-      },
       "propertiesList": {
-        "__resolveType": "site/loaders/propertiesData.ts",
-        "numberOfProperties": 1
+        "__resolveType": "site/loaders/propertiesData.ts"
+      },
+      "property": {
+        "address": "lorem",
+        "price": "0393094",
+        "cars": "90",
+        "bathrooms": "2",
+        "area": "281390",
+        "image": {
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/d60342a9-305b-4f8a-bfe0-f765a8dc0e8f",
+          "alt": "lorem"
+        }
       }
     }
   ],
