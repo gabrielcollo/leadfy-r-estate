@@ -7,7 +7,6 @@ import * as $AdvenceSearch from "./islands/AdvenceSearch.tsx";
 import * as $FeaturedPropertyCard from "./islands/FeaturedPropertyCard.tsx";
 import * as $MenuMobile from "./islands/MenuMobile.tsx";
 import * as $PropertyBuyOptionCard from "./islands/PropertyBuyOptionCard.tsx";
-import * as $Shelf from "./islands/Shelf.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -19,7 +18,6 @@ const manifest = {
     "./islands/FeaturedPropertyCard.tsx": $FeaturedPropertyCard,
     "./islands/MenuMobile.tsx": $MenuMobile,
     "./islands/PropertyBuyOptionCard.tsx": $PropertyBuyOptionCard,
-    "./islands/Shelf.tsx": $Shelf,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

@@ -1,1 +1,24 @@
-{"__resolveType":"site/sections/Footer.tsx","links":[],"bottomLinks":[],"social":[],"subscribe":{}}
+{
+  "__resolveType": "site/sections/Footer.tsx",
+  "links": [
+    {
+      "items": [
+        {
+          "label": "PROPERTIES",
+          "href": "/PROPERTIES"
+        }
+      ],
+      "title": "PAGES"
+    }
+  ],
+  "bottomLinks": [],
+  "social": [],
+  "subscribe": {
+    "title": "LOREM",
+    "description": "lorem ipsum dolor sit amet",
+    "instructions": "<p>lorem ipsum dolor sit amet consectur</p>"
+  },
+  "logo": {
+    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/c6bac7ee-a17e-43a3-8bf3-8cd0b72b2b57"
+  }
+}

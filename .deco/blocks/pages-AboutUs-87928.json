@@ -1,6 +1,6 @@
 {
-  "name": "AboutUs",
-  "path": "/AboutUs",
+  "name": "About us",
+  "path": "/about-us",
   "sections": [
     {
       "__resolveType": "header-real"

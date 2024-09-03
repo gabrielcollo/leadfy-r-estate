@@ -116,8 +116,8 @@
     "__resolveType": "site/sections/HeaderReal.tsx"
   },
   "/.deco/blocks/pages-AboutUs-87928.json": {
-    "name": "AboutUs",
-    "path": "/AboutUs",
+    "name": "About us",
+    "path": "/about-us",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
   },
