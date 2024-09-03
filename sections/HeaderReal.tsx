@@ -15,13 +15,14 @@ export type MenuNavItem = {
 export interface PropsHeaderReal {
     imagem?: ImageWidget;
     logo?: ImageWidget;
+    secondLogo?: ImageWidget;
     menuItems?: MenuNavItem[];
 }
 
-const HeaderReal = ({ imagem, logo, menuItems }: PropsHeaderReal) => {
+const HeaderReal = ({ imagem, logo, secondLogo, menuItems }: PropsHeaderReal) => {
     return (
         <div className="flex flex-col w-full absolute top-0 z-10">
-            <div className="bg-transparent container py-7 hidden lg:flex">
+            <div className="bg-privia-passion py-2 hidden lg:px-5 lg:flex">
                 <div className="flex items-center justify-between mx-auto px-4 w-full">
                     <div className="flex items-center">
                         <Image
@@ -45,8 +46,7 @@ const HeaderReal = ({ imagem, logo, menuItems }: PropsHeaderReal) => {
                     </div>
                 </div>
             </div>
-            <div className="bg-transparent border-b-[1px] border-[#DBDFEC] w-full"></div>
-            <div className="bg-transparent container">
+            <div className="bg-privia-pure px-5">
                 <div className="flex items-center justify-between mx-auto px-4 py-4">
                     <div className="flex items-center">
                         <Image
@@ -56,21 +56,28 @@ const HeaderReal = ({ imagem, logo, menuItems }: PropsHeaderReal) => {
                             height={44}
                         />
                     </div>
-                    <div className="block lg:hidden items-center gap-2">
+                    <div className="block lg:hidden items-center gap-2 z-50">
                         <MenuMobile items={menuItems} />
                     </div>
-                    <nav className="hidden lg:flex items-center gap-2">
-                        {menuItems?.map((item: MenuNavItem) => (
-                            <a
-                                key={item.label}
-                                href={item.href}
-                                className="text-white hover:text-gray-300 transition duration-300 font-semibold text-sm px-3 py-6"
-                            >
-                                {item.label}
-                            </a>
-                        ))}
-                        <a href="#" className="text-white border border-white px-3 py-1 rounded transition duration-300 hover:bg-white hover:text-black font-semibold text-sm">Add Listing</a>
-                    </nav>
+                    <div className="hidden lg:flex items-center gap-2 w-full">
+                        <nav className="flex justify-start items-center gap-2 w-full">
+                            {menuItems?.map((item: MenuNavItem) => (
+                                <a
+                                    key={item.label}
+                                    href={item.href}
+                                    className="text-privia-prestige hover:underline transition duration-300 font-semibold text-sm px-3 py-6"
+                                >
+                                    {item.label}
+                                </a>
+                            ))}
+                        </nav>
+                        <Image
+                            src={secondLogo || ""}
+                            class=" object-cover mr-4"
+                            width={100}
+                            height={50}
+                        />
+                    </div>
                 </div>
             </div>
         </div>

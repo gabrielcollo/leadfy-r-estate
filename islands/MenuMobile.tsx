@@ -28,7 +28,7 @@ const MenuMobile = ({ items }: Props) => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
 
   return (
-    <div className="relative text-white">
+    <div className="relative text-privia-prestige">
       <Button
         className="flex items-center justify-between w-full bg-white text-white py-3 px-4"
         onClick={() => setOpenMenu(!openMenu)}
@@ -40,7 +40,7 @@ const MenuMobile = ({ items }: Props) => {
         )}
       </Button>
       {openMenu && (
-        <div className="fixed inset-0 bg-white z-[100]">
+        <div className="fixed inset-0 bg-white z-50">
           <button
             className="absolute top-4 right-4"
             onClick={() => setOpenMenu(false)}

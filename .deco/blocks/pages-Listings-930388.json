@@ -1,7 +1,10 @@
 {
-  "name": "Listings",
-  "path": "/listings",
+  "name": "Properties",
+  "path": "/properties",
   "sections": [
+    {
+      "__resolveType": "header-real"
+    },
     {
       "__resolveType": "site/sections/BannerCategory.tsx",
       "image": {
@@ -9,7 +12,7 @@
         "alt": "Privia"
       },
       "imageMobile": {
-        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/231a6fa8-b564-4003-b7da-9398c3c2fc7e",
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/5335248d-89f6-4f99-910f-6145cf86856c",
         "alt": "Privia Mobile"
       },
       "content": {
@@ -20,16 +23,19 @@
     },
     {
       "__resolveType": "site/sections/Shelf.tsx",
+      "propertiesList": {
+        "__resolveType": "site/loaders/propertiesData.ts"
+      },
       "property": {
-        "image": {
-          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/a83f5830-d17d-4cc4-94e0-4c11c2a8af7b",
-          "alt": "lorem"
-        },
-        "address": "lorem ipsum dolor, sit amet",
-        "price": "$ 590,693",
-        "cars": "3",
+        "address": "lorem",
+        "price": "0393094",
+        "cars": "90",
         "bathrooms": "2",
-        "area": "2,909.00 ft"
+        "area": "281390",
+        "image": {
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/d60342a9-305b-4f8a-bfe0-f765a8dc0e8f",
+          "alt": "lorem"
+        }
       }
     }
   ],

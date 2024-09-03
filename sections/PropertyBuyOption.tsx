@@ -19,7 +19,7 @@ const PropertyBuyOption = ({ title, subDescription, PropertyBuyOptions }: Proper
   const id = useId();
 
   return (
-    <div className="bg-[#EDEFF6]">
+    <div className="bg-privia-pure">
       <div className="text-center py-8 px-20 container mx-auto">
         <div className="mb-11 container mx-auto md:px-60 flex flex-col gap-6">
           <h2 className="text-2xl md:text-4xl font-semibold text-black">{title}</h2>
