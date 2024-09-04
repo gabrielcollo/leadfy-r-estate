@@ -37,6 +37,9 @@
           "alt": "lorem"
         }
       }
+    },
+    {
+      "__resolveType": "Footer"
     }
   ],
   "seo": {

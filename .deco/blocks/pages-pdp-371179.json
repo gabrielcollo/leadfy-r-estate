@@ -1,7 +1,10 @@
 {
-  "name": "pdp",
-  "path": "/example-path5",
+  "name": "Property page",
+  "path": "/properties/*",
   "sections": [
+    {
+      "__resolveType": "header-real"
+    },
     {
       "__resolveType": "site/sections/HeroProductPage.tsx"
     },
@@ -10,6 +13,9 @@
     },
     {
       "__resolveType": "site/sections/PropertyOverview.tsx"
+    },
+    {
+      "__resolveType": "Footer"
     }
   ],
   "seo": {
