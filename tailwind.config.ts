@@ -1,7 +1,7 @@
-import daisyui from "daisyui";
+// import daisyui from "daisyui";
 
 export default {
-  plugins: [daisyui],
+  plugins: [],
   daisyui: { themes: [], logs: false },
   content: ["./**/*.tsx"],
   theme: {
@@ -15,6 +15,11 @@ export default {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
         },
+      },
+      colors: {
+        "privia-passion": "#FF3F3F",
+        "privia-pure": "#F1FAEE",
+        "privia-prestige": "#222222",
       },
     },
   },

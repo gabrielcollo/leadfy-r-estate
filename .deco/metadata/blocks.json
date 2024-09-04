@@ -104,5 +104,27 @@
   "/.deco/blocks/Vanilla.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Theme/Theme.tsx"
+  },
+  "/.deco/blocks/pages-Listings-930388.json": {
+    "name": "Properties",
+    "path": "/properties",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/header-real.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/HeaderReal.tsx"
+  },
+  "/.deco/blocks/pages-AboutUs-87928.json": {
+    "name": "About us",
+    "path": "/about-us",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-pdp-371179.json": {
+    "name": "pdp",
+    "path": "/example-path5",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }

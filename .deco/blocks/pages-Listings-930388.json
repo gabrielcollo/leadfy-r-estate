@@ -1,0 +1,46 @@
+{
+  "name": "Properties",
+  "path": "/properties",
+  "sections": [
+    {
+      "__resolveType": "header-real"
+    },
+    {
+      "__resolveType": "site/sections/BannerCategory.tsx",
+      "image": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/2bcb2f39-2a31-4c6f-a425-5ea1659f735f",
+        "alt": "Privia"
+      },
+      "imageMobile": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/5335248d-89f6-4f99-910f-6145cf86856c",
+        "alt": "Privia Mobile"
+      },
+      "content": {
+        "title": "LOREM IPSUM",
+        "url": "/listings?",
+        "description": "LOREM IPSUM DOLOR SIT AMET CONSECTUR"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Shelf.tsx",
+      "propertiesList": {
+        "__resolveType": "site/loaders/propertiesData.ts"
+      },
+      "property": {
+        "address": "lorem",
+        "price": "0393094",
+        "cars": "90",
+        "bathrooms": "2",
+        "area": "281390",
+        "image": {
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/d60342a9-305b-4f8a-bfe0-f765a8dc0e8f",
+          "alt": "lorem"
+        }
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

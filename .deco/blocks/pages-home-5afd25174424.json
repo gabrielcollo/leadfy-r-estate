@@ -1,42 +1,137 @@
 {
-    "name": "Home",
-    "path": "/",
-    "sections": [
-      {
-        "__resolveType": "Header"
+  "name": "Home",
+  "path": "/",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Footer.tsx",
+      "subscribe": {
+        "instructions": "<pre><code>Call : +123 400 123\n\nPraesent nulla massa, hendrerit \nvestibulum gravida in, feugiat auctor felis.</code></pre><p></p><p></p>",
+        "title": "Contact Us",
+        "description": "Email: example@mail.com"
       },
-      {
-        "__resolveType": "site/sections/Hero.tsx",
-        "title": "<p>Click here to tweak this text however you want.</p>",
-        "cta": [],
-        "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away."
+      "links": [
+        {
+          "items": [
+            {
+              "label": "Home",
+              "href": "#"
+            },
+            {
+              "label": "Become a Host",
+              "href": "#"
+            },
+            {
+              "label": "Pricing",
+              "href": "#"
+            },
+            {
+              "label": "Blog",
+              "href": "#"
+            },
+            {
+              "label": "Contact",
+              "href": "#"
+            }
+          ],
+          "title": "Features"
+        }
+      ],
+      "logo": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/6d90909b-7f23-4a3a-822e-a095301d2c6f"
       },
-      {
-        "__resolveType": "site/sections/Logos.tsx"
-      },
-      {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx"
-      },
-      {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx",
-        "placement": "right"
-      },
-      {
-        "__resolveType": "site/sections/BlogPosts.tsx"
-      },
-      {
-        "__resolveType": "site/sections/Testimonials.tsx",
-        "arrows": true
-      },
-      {
-        "__resolveType": "site/sections/Faq.tsx"
-      },
-      {
-        "__resolveType": "Footer"
-      }
-    ],
-    "__resolveType": "website/pages/Page.tsx",
-    "seo": {
-      "__resolveType": "website/sections/Seo/SeoV2.tsx"
+      "social": [
+        {
+          "network": "Facebook",
+          "href": "/"
+        },
+        {
+          "network": "Rede",
+          "href": "/"
+        },
+        {
+          "network": "Linkedin",
+          "href": "/"
+        },
+        {
+          "network": "Instagram",
+          "href": "/"
+        },
+        {
+          "network": "BE",
+          "href": "/"
+        }
+    },
+    {
+      "__resolveType": "header-real"
+    },
+    {
+      "__resolveType": "site/sections/HeroBanner.tsx",
+      "title": "Lorem Ipsum",
+      "description": "Lorem Ipsum dolor",
+      "background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/e31e9c4e-4df1-4b2f-9e12-13a5024fc9f5"
+    },
+    {
+      "__resolveType": "site/sections/FeaturedProperty.tsx",
+      "title": "Lorem Ipsum",
+      "subDescription": "Lorem ipsum dolor sit amet",
+      "properties": [
+        {
+          "city": "Washington",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/ee71820a-bb7d-4d36-b9d5-4d4432480df3",
+          "viewDetail": "/listings"
+        },
+        {
+          "city": "Washington",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/ee71820a-bb7d-4d36-b9d5-4d4432480df3",
+          "viewDetail": "/listings"
+        },
+        {
+          "city": "Washington",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/ee71820a-bb7d-4d36-b9d5-4d4432480df3",
+          "viewDetail": "/listings"
+        },
+        {
+          "city": "Franklin",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/d60342a9-305b-4f8a-bfe0-f765a8dc0e8f",
+          "viewDetail": "/listings"
+        },
+        {
+          "city": "Washington",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/ee71820a-bb7d-4d36-b9d5-4d4432480df3",
+          "viewDetail": "/listings"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/PropertyBuyOption.tsx",
+      "title": "Lorem Ipsum",
+      "subDescription": "Lorem Ipsum dolor sit amet",
+      "PropertyBuyOptions": [
+        {
+          "title": "Lorem Ipusm",
+          "subDescription": "Lorem ipsum dolor sit amet",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/af6ee1c4-a7ad-4aed-949f-c29d63cfec11"
+        },
+        {
+          "title": "Lorem Ipusm",
+          "subDescription": "Lorem ipsum dolor sit amet",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/af6ee1c4-a7ad-4aed-949f-c29d63cfec11"
+        },
+        {
+          "title": "Lorem Ipusm",
+          "subDescription": "Lorem ipsum dolor sit amet",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/af6ee1c4-a7ad-4aed-949f-c29d63cfec11"
+        },
+        {
+          "title": "Lorem Ipusm",
+          "subDescription": "Lorem ipsum dolor sit amet",
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/af6ee1c4-a7ad-4aed-949f-c29d63cfec11"
+        }
+      ]
     }
+  ],
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
   }
+}

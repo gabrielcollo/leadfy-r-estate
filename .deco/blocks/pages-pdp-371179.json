@@ -1,0 +1,19 @@
+{
+  "name": "pdp",
+  "path": "/example-path5",
+  "sections": [
+    {
+      "__resolveType": "site/sections/HeroProductPage.tsx"
+    },
+    {
+      "__resolveType": "site/sections/PropertyDescription.tsx"
+    },
+    {
+      "__resolveType": "site/sections/PropertyOverview.tsx"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
