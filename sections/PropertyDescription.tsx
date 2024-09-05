@@ -1,22 +1,20 @@
 import { useSignal } from '@preact/signals';
+import type { PropertiesList } from "../loaders/propertiesData.ts";
 
-const PropertyDescription = () => {
+export interface Props {
+  propertiesList?: PropertiesList;
+}
+
+const PropertyDescription = ({ propertiesList = [] }: Props) => {
 
     const showFullDescription = useSignal(false);
+    const property = propertiesList
 
     return (
         <div class="container mx-auto px-4 pb-8">
           <h3 class="text-[42px] font-extrabold text-[#ff3f3f] mb-8">Property Description</h3>
           <p class={`text-base text-black ${showFullDescription.value ? 'line-clamp-none' : 'line-clamp-3'}`}>
-            Discover unparalleled luxury in this Richard Meier-designed contemporary waterfront estate in
-            Sands Point. This architectural masterpiece sits on expansive grounds offering 200 ft of
-            breathtaking water views. The primary residence is a symphony of light and space. The home
-            features floor-to-ceiling windows, open-plan living areas, and state-of-the-art amenities. The
-            estate includes a two-family staff house and a pool cabana. A standout feature is the 2 story
-            boat/guest house, perfect for hosting or enjoying a serene retreat by the water. The historic ice
-            house adds unique charm and ample storage, while the carriage house provides space for up to
-            seven cars with a lift. Outdoor living is equally impressive, with a sparkling pool offering
-            panoramic views and a tennis court for athletic pursuits.
+            {property[0].description}
           </p>
           <button
             class="flex items-center text-[#ff3f3f] mt-4"

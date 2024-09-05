@@ -4,76 +4,30 @@ import SliderJS from "../islands/SliderJS.tsx";
 import { useId } from "../sdk/useId.ts";
 import ZoomImage from "../islands/ZoomImage.tsx";
 import FormProductPage from "site/islands/FormProductPage.tsx";
+import Image from "apps/website/components/Image.tsx";
+import type { PropertiesList } from "../loaders/propertiesData.ts";
 
-const HeroProductPage = () => {
+export interface Props {
+  propertiesList?: PropertiesList;
+}
+
+const HeroProductPage = ({ propertiesList = [] }:Props) => {
+  const property = propertiesList
+
+  console.log(property[0])
+
   const id = useId();
-  const images = [
-    {
-      url: "https://dlajgvw9htjpb.cloudfront.net/cms/b26ab618-2b1e-4a17-8868-498b96b52dc0/H6309829/17012948286529502.jpg",
-      alt: "Image 1",
-    },
-    {
-      url: "https://dlajgvw9htjpb.cloudfront.net/cms/b26ab618-2b1e-4a17-8868-498b96b52dc0/H6309829/-393672028532225682.jpg",
-      alt: "Image 2",
-    },
-    {
-      url: "https://dlajgvw9htjpb.cloudfront.net/cms/b26ab618-2b1e-4a17-8868-498b96b52dc0/H6309829/-393672028532225682.jpg",
-      alt: "Image 3",
-    },
-  ];
-
-  const width = 650;
-  const height = 650;
-  const aspectRatio = `${width} / ${height}`;
+  const images = ["https://dlajgvw9htjpb.cloudfront.net/cms/b26ab618-2b1e-4a17-8868-498b96b52dc0/H6309829/17012948286529502.jpg",
+    "https://dlajgvw9htjpb.cloudfront.net/cms/b26ab618-2b1e-4a17-8868-498b96b52dc0/H6309829/-393672028532225682.jpg",
+    "https://dlajgvw9htjpb.cloudfront.net/cms/b26ab618-2b1e-4a17-8868-498b96b52dc0/H6309829/-393672028532225682.jpg"  ];
 
   return (
-    <div className="container mx-auto px-4 py-16">
+    <div className="container mt-28 mx-auto px-4 py-16">
       <div id={id} className="flex space-x-4">
-        {/* Thumbnails */}
-        <div className="flex flex-col space-y-2">
-          {images.map((img, index) => (
-            <Slider.Item key={index} index={index} className="cursor-pointer">
-              <img
-                className="w-16 h-16 object-cover"
-                src={img.url}
-                alt={img.alt}
+ 
+        <GalleryProductPage
+                images={images}
               />
-            </Slider.Item>
-          ))}
-        </div>
-
-        {/* Main Image Slider */}
-        <div className="flex-grow">
-          <Slider className="max-w-[650px] max-h-[650px]">
-            {images.map((img, index) => (
-              <Slider.Item key={index} index={index} className="w-full">
-                <ZoomImage>
-                  <img
-                    className="w-full object-cover"
-                    style={{ aspectRatio }}
-                    src={img.url}
-                    alt={img.alt}
-                  />
-                </ZoomImage>
-              </Slider.Item>
-            ))}
-          </Slider>
-
-          {/* Navigation Buttons */}
-          {images.length > 1 && (
-            <div className="flex justify-between mt-2">
-              <Slider.PrevButton>
-                <Icon className="text-black" size={24} id="ArrowLeft" strokeWidth={1} />
-              </Slider.PrevButton>
-              <Slider.NextButton>
-                <Icon className="text-black" size={24} id="ArrowRight" strokeWidth={1} />
-              </Slider.NextButton>
-            </div>
-          )}
-
-          <SliderJS rootId={id} />
-        </div>
-
         
         {/* Form */}
         <div className="hidden md:block">
@@ -83,15 +37,14 @@ const HeroProductPage = () => {
 
       {/* Product Details */}
       <div className="mt-8">
-        <h2 className="text-[32px] font-extrabold text-[#ff3f3f]">27 Astor Lane</h2>
-        <p className="text-2xl mt-2 text-[#787878] font-extrabold">$7,990,000</p>
+        <h2 className="text-[32px] font-extrabold text-privia-passion">{property[0].title}</h2>
+        <p className="text-2xl mt-2 text-[#787878] font-extrabold">{property[0].price}</p>
       </div>
       <div className="flex flex-col md:flex-rowgap-4 w-full mt-4">
         <ul className="flex flex-row gap-4 text-xs text-[#787878]">
-          <li>6 BEDROOMS</li>
-          <li>&bull; 5 FULL BATHS</li>
-          <li>&bull; 2 HALF BATHS</li>
-          <li>&bull; 7,052 Sq.Ft</li>
+          <li>{property[0].rooms} BEDROOMS</li>
+          <li>&bull; {property[0].bathrooms} FULL BATHS</li>
+          <li>&bull; {property[0].areaSize} Ft</li>
         </ul>
       <div className="md:hidden block mt-9">
           <FormProductPage />
@@ -100,5 +53,93 @@ const HeroProductPage = () => {
     </div>
   );
 };
+
+
+function GalleryProductPage({ images }: { images: string[] }) {
+  const id = useId();
+  const width = 850;
+  const height = 850;
+  const aspectRatio = `${width} / ${height}`;
+
+  return (
+    <div
+      id={id}
+      class="grid grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px] grid-rows-[1fr_48px_1fr_64px]"
+    >
+      <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-2 max-w-[850px] max-h-[850px]">
+        {images?.map((image, index) => (
+          <Slider.Item
+            index={index}
+            class="carousel-item w-full flex items-center"
+          >
+            <ZoomImage>
+              <img
+                class="w-full h-max"
+                style={{aspectRatio}}
+                src={image}
+                width={550}
+                />
+            </ZoomImage>
+          </Slider.Item>
+        ))}
+      </Slider>
+
+      {/* {images?.length! > 1 ? <Buttons /> : null} */}
+
+      <Dots images={images} />
+
+      <SliderJS rootId={id} infinite />
+    </div>
+  );
+}
+
+function Dots({ images }: { images: string[] }) {
+  return (
+    <>
+      <ul class="carousel justify-center col-span-full gap-2 z-10 pt-5">
+        {images?.map((image, index) => (
+          <li class="carousel-item">
+            <Slider.Dot index={index}>
+              <div class="w-14 h-12 py-5 border-[1px] border-black flex justify-center items-center opacity-40 group-disabled:opacity-100">
+                <Image
+                  class="w-[40px] h-max"
+                  src={image}
+                  width={80}
+                />
+              </div>
+            </Slider.Dot>
+          </li>
+        ))}
+      </ul>
+    </>
+  );
+}
+
+function Buttons() {
+  return (
+    <>
+      <div class="flex items-center justify-center z-10 col-start-1 row-start-2">
+        <Slider.PrevButton>
+          <Icon
+            class="text-white"
+            size={26}
+            id="ChevronLeft"
+            strokeWidth={5}
+          />
+        </Slider.PrevButton>
+      </div>
+      <div class="flex items-center justify-center z-10 col-start-3 row-start-2">
+        <Slider.NextButton>
+          <Icon
+            class="text-white"
+            size={26}
+            id="ChevronRight"
+            strokeWidth={5}
+          />
+        </Slider.NextButton>
+      </div>
+    </>
+  );
+}
 
 export default HeroProductPage;

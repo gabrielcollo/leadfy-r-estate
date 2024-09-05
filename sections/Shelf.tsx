@@ -10,7 +10,6 @@ export interface Props {
 }
 
 export default function Shelf({ defaultOrder = "default",propertiesList=[]}: Props) {
-  console.log(propertiesList)
  
   return (
     <div class="w-full px-4 mt-10 flex flex-col justify-start items-center gap-5 lg:w-4/5 lg:mx-auto">
