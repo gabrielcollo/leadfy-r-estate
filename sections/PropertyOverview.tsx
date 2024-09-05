@@ -9,8 +9,8 @@ const PropertyOverview = ({ propertiesList = [] }: Props) => {
     const property = propertiesList
 
     return (
-        <div class="container mx-auto px-4">
-          <h3 class="text-[42px] font-extrabold text-[#ff3f3f] mb-8">Overview</h3>
+        <div class="container mx-auto px-4 lg:px-[5%]">
+          <h3 class="text-[26px] font-extrabold text-[#ff3f3f] mb-8">Overview</h3>
           <div class="grid grid-cols-2 gap-4 w-fit">
             <div class="font-medium text-gray-700">Property Type</div>
             <div class="text-gray-900">{property[0].type}</div>

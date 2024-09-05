@@ -22,11 +22,11 @@ const HeroProductPage = ({ propertiesList = [] }:Props) => {
     "https://dlajgvw9htjpb.cloudfront.net/cms/b26ab618-2b1e-4a17-8868-498b96b52dc0/H6309829/-393672028532225682.jpg"  ];
 
   return (
-    <div className="container mt-28 mx-auto px-4 py-16">
-      <div id={id} className="flex space-x-4">
+    <div className="container mt-28 mx-auto px-4 py-16 lg:px-0">
+      <div id={id} className="flex justify-center space-x-4 lg:px-[5%]">
  
         <GalleryProductPage
-                images={images}
+                images={property[3].images}
               />
         
         {/* Form */}
@@ -36,11 +36,11 @@ const HeroProductPage = ({ propertiesList = [] }:Props) => {
       </div>
 
       {/* Product Details */}
-      <div className="mt-8">
+      <div className="container mt-8 lg:px-[5%]">
         <h2 className="text-[32px] font-extrabold text-privia-passion">{property[0].title}</h2>
         <p className="text-2xl mt-2 text-[#787878] font-extrabold">{property[0].price}</p>
       </div>
-      <div className="flex flex-col md:flex-rowgap-4 w-full mt-4">
+      <div className="container flex flex-col md:flex-rowgap-4 w-full mt-4 lg:px-[5%]">
         <ul className="flex flex-row gap-4 text-xs text-[#787878]">
           <li>{property[0].rooms} BEDROOMS</li>
           <li>&bull; {property[0].bathrooms} FULL BATHS</li>
@@ -57,8 +57,8 @@ const HeroProductPage = ({ propertiesList = [] }:Props) => {
 
 function GalleryProductPage({ images }: { images: string[] }) {
   const id = useId();
-  const width = 850;
-  const height = 850;
+  const width = 650;
+  const height = 650;
   const aspectRatio = `${width} / ${height}`;
 
   return (
@@ -66,7 +66,7 @@ function GalleryProductPage({ images }: { images: string[] }) {
       id={id}
       class="grid grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px] grid-rows-[1fr_48px_1fr_64px]"
     >
-      <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-2 max-w-[850px] max-h-[850px]">
+      <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-2 max-w-[650px] max-h-[650px]">
         {images?.map((image, index) => (
           <Slider.Item
             index={index}
@@ -77,7 +77,7 @@ function GalleryProductPage({ images }: { images: string[] }) {
                 class="w-full h-max"
                 style={{aspectRatio}}
                 src={image}
-                width={550}
+                width={650}
                 />
             </ZoomImage>
           </Slider.Item>
@@ -100,11 +100,11 @@ function Dots({ images }: { images: string[] }) {
         {images?.map((image, index) => (
           <li class="carousel-item">
             <Slider.Dot index={index}>
-              <div class="w-14 h-12 py-5 border-[1px] border-black flex justify-center items-center opacity-40 group-disabled:opacity-100">
+              <div class="w-20 h-20 py-5 border-[1px] border-none flex justify-center items-center opacity-40 group-disabled:opacity-100">
                 <Image
-                  class="w-[40px] h-max"
+                  class="w-full h-max"
                   src={image}
-                  width={80}
+                  width={120}
                 />
               </div>
             </Slider.Dot>
