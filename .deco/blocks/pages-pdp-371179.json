@@ -15,6 +15,9 @@
       "__resolveType": "site/sections/PropertyOverview.tsx"
     },
     {
+      "__resolveType": "site/sections/PropertyLocation.tsx"
+    },
+    {
       "__resolveType": "Footer"
     }
   ],
