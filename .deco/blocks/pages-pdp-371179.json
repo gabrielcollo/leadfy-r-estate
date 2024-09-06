@@ -3,7 +3,7 @@
   "path": "/properties/*",
   "sections": [
     {
-      "__resolveType": "header-real"
+      "__resolveType": "HeaderReal"
     },
     {
       "__resolveType": "site/sections/HeroProductPage.tsx",
