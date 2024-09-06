@@ -24,6 +24,9 @@
       }
     },
     {
+      "__resolveType": "site/sections/PropertyLocation.tsx"
+    },
+    {
       "__resolveType": "Footer"
     }
   ],
