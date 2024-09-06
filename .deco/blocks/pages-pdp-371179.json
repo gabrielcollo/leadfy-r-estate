@@ -6,13 +6,22 @@
       "__resolveType": "header-real"
     },
     {
-      "__resolveType": "site/sections/HeroProductPage.tsx"
+      "__resolveType": "site/sections/HeroProductPage.tsx",
+      "propertiesList": {
+        "__resolveType": "site/loaders/propertiesData.ts"
+      }
     },
     {
-      "__resolveType": "site/sections/PropertyDescription.tsx"
+      "__resolveType": "site/sections/PropertyDescription.tsx",
+      "propertiesList": {
+        "__resolveType": "site/loaders/propertiesData.ts"
+      }
     },
     {
-      "__resolveType": "site/sections/PropertyOverview.tsx"
+      "__resolveType": "site/sections/PropertyOverview.tsx",
+      "propertiesList": {
+        "__resolveType": "site/loaders/propertiesData.ts"
+      }
     },
     {
       "__resolveType": "site/sections/PropertyLocation.tsx"
