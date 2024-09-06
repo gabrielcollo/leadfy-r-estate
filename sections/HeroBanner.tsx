@@ -21,7 +21,7 @@ const Herobanner = ({ title, description, background }: PropsHeroBanner) => {
                     <p className="text-xl font-normal max-w-[696px]">{description}</p>
                 </div>
             </div>
-            <div className="flex justify-center flex-col relative">
+            {/* <div className="flex justify-center flex-col relative">
                 <div className="flex justify-center mb-4 bg-transparent absolute top-[-70%] lg:top-[-140%] w-full">
                     <div className="flex justify-center gap-3" >
                         <button className="px-4 py-2 min-h-14 min-w-20 rounded-md bg-privia-prestige text-white">Rent</button>
@@ -29,7 +29,7 @@ const Herobanner = ({ title, description, background }: PropsHeroBanner) => {
                     </div>
                 </div>
                 <AdvenceSearch />
-            </div>
+            </div> */}
         </div>
     );
 }
