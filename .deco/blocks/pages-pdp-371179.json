@@ -24,7 +24,10 @@
       }
     },
     {
-      "__resolveType": "site/sections/PropertyLocation.tsx"
+      "__resolveType": "site/sections/PropertyLocation.tsx",
+      "propertiesList": {
+        "__resolveType": "site/loaders/propertiesData.ts"
+      }
     },
     {
       "__resolveType": "Footer"

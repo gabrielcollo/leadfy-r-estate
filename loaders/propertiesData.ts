@@ -23,6 +23,8 @@ export default async function propertiesData(
         compact: true,
     });    
     const posts = obj.data.post
+
+    console.log(posts[0])
     
     const propertiesResult: string[] = posts.map(post => {
         return (
@@ -35,6 +37,10 @@ export default async function propertiesData(
                 images: post?.ImageURL?._text?.split('|'),
                 imageFeatured: post?.ImageFeatured?._text,
                 location: post?.Location?._text,
+                mapLocation: {
+                    lat: post?.lat?._text,
+                    lng: post?.lng?._text,
+                },
                 postModifiedDate: post?.PostModifiedDate?._text, 
                 price: formatPrice(Number(post?.price?._text))                ,
                 rooms: post?.rooms?._text,

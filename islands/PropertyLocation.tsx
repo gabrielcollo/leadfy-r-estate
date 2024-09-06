@@ -1,14 +1,19 @@
 import { useEffect } from "preact/hooks";
 
-interface PropertyLocationProps {
-  lat?: number;
-  lng?: number;
+export interface Props {
+  propertiesList?: PropertiesList;
 }
 
-const PropertyLocation = ({
-  lat = -23.467796038723066,
-  lng = -47.477858433613356,
-}: PropertyLocationProps) => {
+import type { PropertiesList } from "../loaders/propertiesData.ts";
+
+const PropertyLocation = (  { propertiesList = [] }:Props) => {
+
+  const property = propertiesList
+  console.log(property)
+  const lat: string = property[0]?.mapLocation?.lat || "0"
+  const lng: string = property[0]?.mapLocation?.lng || "0"
+  console.log(lat, lng)
+
   useEffect(() => {
     // Carregar Leaflet CSS
     if (!document.querySelector('link[href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"]')) {
