@@ -36,7 +36,9 @@
           "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11997/d60342a9-305b-4f8a-bfe0-f765a8dc0e8f",
           "alt": "lorem"
         }
-      }
+      },
+      "showPriceText": true,
+      "priceText": "Starts at"
     },
     {
       "__resolveType": "Footer"
