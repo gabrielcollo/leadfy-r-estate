@@ -9,9 +9,11 @@ import type { PropertiesList } from "../loaders/propertiesData.ts";
 
 export interface Props {
   propertiesList?: PropertiesList;
+  showPriceText?: boolean;
+  priceText?: string;
 }
 
-const HeroProductPage = ({ propertiesList = [] }:Props) => {
+const HeroProductPage = ({showPriceText, priceText, propertiesList = [] }:Props) => {
   const property = propertiesList
 
   console.log(property[0])
@@ -38,7 +40,12 @@ const HeroProductPage = ({ propertiesList = [] }:Props) => {
       {/* Product Details */}
       <div className="container mt-8 lg:px-[5%]">
         <h2 className="text-[32px] font-extrabold text-privia-passion">{property[0].title}</h2>
-        <p className="text-2xl mt-2 text-[#787878] font-extrabold">{property[0].price}</p>
+        <div class="flex flex-col">
+          {showPriceText && (
+              <span class="w-[150px] text-xs">{priceText}</span>
+            )}
+          <p className="text-2xl mt-2 text-[#787878] font-extrabold">{property[0].price}</p>
+        </div>
       </div>
       <div className="container flex flex-col md:flex-rowgap-4 w-full mt-4 lg:px-[5%]">
         <ul className="flex flex-row gap-4 text-xs text-[#787878]">
